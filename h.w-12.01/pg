@@ -1,0 +1,27 @@
+1.
+PARTITION BY divides the data into subsets
+where window functions are applied independently to each subset
+
+
+2.
+-> extracts a value as its original data type, such as an object or array
+
+in the query -
+details->>'name' extracts the value of the "name" key as text (e.g., "Laptop"),
+while details->'features'->>'RAM' navigates into the "features" object
+and retrieves the "RAM" value as text (e.g., "16GB")
+
+
+3.
+query 1: Create a Table
+query 2: Insert Data
+query 3: Query Specific Array Element
+        The query retrieves the first element from each array
+query 4: Search for a Value in the Array
+        The query searches for rows where the value 3 is present in the array
+
+
+4.
+The term GENERATED ALWAYS is used in the column definition to automatically calculate
+a value based on other columns in the table.
+In this case, the tax column is always calculated based on the value in the price column
